@@ -58,7 +58,7 @@ YEAR(o.order_date)
 ORDER BY
 total_revenue DESC;
 ```
-Insight: the highest total revenue was in 2017 at $4113799.37, while the lowest was in 2018 at $2162584.14.
+Insight: The highest total revenue was in 2017 at $4,113,799.37, while the lowest was in 2018 at $2,162,584.14.
 
 #### What was the total monthly revenue?
 ```sql
@@ -73,7 +73,7 @@ GROUP BY YEAR(o.order_date), MONTH(o.order_date)
 ORDER BY total_revenue DESC;
 ```
 
-Insight: the highest total revenue was in April 2018 at $968983.10, while the lowest was in June 2018 at $229.99.
+Insight: The highest total revenue was in April 2018 at $968,983.10, while the lowest was in June 2018 at $229.99.
 
 #### What was the total revenue per category?
 ```sql
@@ -88,7 +88,7 @@ ON p.product_id = i.product_id
 GROUP BY c.category_name
 ORDER BY SUM(i.total_price) DESC;
 ```
-Insight: the highest total revenue by product was Mountain Bikes at $3242524.94, while the lowest was Children Bicycles at $350537.07.
+Insight: The highest total revenue by product was Mountain Bikes at $3,242,524.94, while the lowest was Children Bicycles at $350,537.07.
 
 #### What was the total annual revenue for each category?
 ```sql
@@ -107,7 +107,7 @@ GROUP BY c.category_name, YEAR(o.order_date)
 ORDER BY  
 total_revenue DESC;
 ```
-Insight: the highest total annual revenue for a category was Mountain Bikes in 2016 at $1418225.17, while the lowest was Children Bicycyles in 2018 at $68780.53.
+Insight: The highest total annual revenue for a category was Mountain Bikes in 2016 at $1,418,225.17, while the lowest was Children Bicyles in 2018 at $68,780.53.
 
 
 #### What was the total monthly revenue for each category?
@@ -128,7 +128,7 @@ GROUP BY c.category_name, YEAR(o.order_date), MONTH(o.order_date)
 ORDER BY total_revenue DESC;
 ```
 
-Insight: category rith the highest total monthly revenue was Road Bikes in April 2018 at $329669.94, while the lowest was Children Bicycles in June 2018 at $229.99.
+Insight: Category with the highest total monthly revenue was Road Bikes in April 2018 at $329,669.94, while the lowest was Children Bicycles in June 2018 at $229.99.
 
 #### What were the total units sold per year?
 ```sql
@@ -142,7 +142,7 @@ GROUP BY YEAR(o.order_date)
 ORDER BY total_unit DESC;
 ```
 
-Insight: the highest number of units sold was in 2017 with 3099 units, while the lowest was in 2018 with 1316 units.
+Insight: The highest number of units sold was in 2017 with 3,099 units, while the lowest was in 2018 with 1,316 units.
 
 
 ### Stores Performance Analysis
@@ -159,7 +159,7 @@ GROUP BY o.store_id, YEAR(o.order_date)
 ORDER BY total_unit DESC;
 ```
 
-Insight: the highest number of units sold by a store in a single year was 2,159 units by store_id = 2 in 2017, while the lowest was 149 units by store_id = 3 in 2018.
+Insight: The highest number of units sold by a store in a single year was 2,159 units by store_id = 2 in 2017, while the lowest was 149 units by store_id = 3 in 2018.
 
 #### What was the total revenue per store?
 ```sql
@@ -175,7 +175,7 @@ GROUP BY s.store_name
 ORDER BY SUM(i.total_price) DESC;
 ```
 
-Insight: the highest revenue by store was Baldwin Bikes with $6234519.49, while the lowest was Rowlett Bikes with $1025731.74.
+Insight: The highest revenue by store was Baldwin Bikes with $6,234,519.49, while the lowest was Rowlett Bikes with $1,025,731.74.
 
 #### What was the total annual revenue per store?
 ```sql
@@ -192,7 +192,7 @@ GROUP BY s.store_name, YEAR(o.order_date)
 ORDER BY total_revenue DESC;
 ```
 
-Insight: the highest annual revenue by store was $2957523.49 by Baldwin Bikes in 2017, while the lowest was $226682.98 by Rowlett Bikes in 2018.
+Insight: The highest annual revenue by store was $2,957,523.49 by Baldwin Bikes in 2017, while the lowest was $226,682.98 by Rowlett Bikes in 2018.
 
 #### What was the total stock per store?
 ```sql
@@ -206,7 +206,7 @@ GROUP BY s.store_name
 ORDER BY SUM(sto.quantity) DESC;
 ```
 
-Insight: Rowlett Bikes had the highest total stock with 4620 units, while Baldwin Bikes had the lowest with 4359 units.
+Insight: Rowlett Bikes had the highest total stock with 4,620 units, while Baldwin Bikes had the lowest with 4,359 units.
 
 #### What was the most profitable state by total revenue?
 ```sql
@@ -222,7 +222,7 @@ GROUP BY str.state
 ORDER BY total_revenue DESC;
 ```
 
-Insight: New York was the most profitable state with the highest total revenue with $5215751.28.
+Insight: New York was the most profitable state with the highest total revenue with $5,215,751.28.
 
 #### Which regions show the highest customer concentration for potential expansion or advertising?
 ```sql
@@ -234,7 +234,7 @@ GROUP BY c.state
 ORDER BY number_of_people DESC;
 ```
 
-Insight: New York is the region with the highest customer concentration with 1019 people, making it the ideal location for opening new stores.
+Insight: New York is the region with the highest customer concentration with 1,019 people, making it the ideal location for opening new stores.
 
 ### Products Performance Analysis
 #### What were the total units sold per category?
@@ -251,7 +251,7 @@ GROUP BY c.category_name
 ORDER BY SUM(i.quantity) DESC;
 ```
 
-Insight: Cruisers Bicycles had the highest total units sold with 2063 units, while Electric Bikes had the lowest with 315 units.
+Insight: Cruisers Bicycles had the highest total units sold with 2,063 units, while Electric Bikes had the lowest with 315 units.
 
 #### What were the total units sold per brand?
 ```sql
@@ -267,7 +267,7 @@ GROUP BY b.brand_name
 ORDER BY SUM(i.quantity) DESC;
 ```
 
-Insight: Electra recorded the highest total units sold with 2612 units, while Strider had the lowest with 25 units.
+Insight: Electra recorded the highest total units sold with 2,612 units, while Strider had the lowest with 25 units.
 
 #### What was the total stock per product?
 ```sql
@@ -297,7 +297,7 @@ GROUP BY c.category_name
 ORDER BY total_stocks DESC;
 ```
 
-Insight: Cruisers Bicycles had the highest total stock with 3378 units, while Cyclocross Bicycles had the lowest with 414 units.
+Insight: Cruisers Bicycles had the highest total stock with 3,378 units, while Cyclocross Bicycles had the lowest with 414 units.
 
 ### Customers Behaviour Analysis
 #### Who were the top 5 customers with the most spent?
@@ -395,7 +395,7 @@ GROUP BY st.staff_name, s.store_name
 ORDER BY SUM(i.total_price) DESC;
 ```
 
-Insight: Marcelene Boyer from Baldwin Bikes generated the highest revenue, totaling $3147789.21.
+Insight: Marcelene Boyer from Baldwin Bikes generated the highest revenue, totaling $3,147,789.21.
 
 ### Order Overview
 #### What were all the order status?
@@ -410,3 +410,6 @@ ORDER BY total_orders DESC;
 ```
 
 Insight: All order were 89.47% completed.
+
+###Recommendations
+- 
