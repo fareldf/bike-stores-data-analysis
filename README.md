@@ -411,5 +411,9 @@ ORDER BY total_orders DESC;
 
 Insight: All order were 89.47% completed.
 
-###Recommendations
-- 
+Recommendations
+- Prioritize high-performing categories, such as Mountain Bikes and Road Bikes, to maximize revenue through targeted promotions and inventory focus.
+- Optimize store performance by scaling strategies from Baldwin Bikes and improving inventory efficiency in low-performing stores like Rowlett Bikes.
+- Expand business in New York due to its highest revenue contribution and strong customer base.
+- Strengthen product strategy by promoting top brands, such as Electra, and reducing focus on low-demand products.
+- Improve customer retention and operations by targeting high-value customers and increasing order completion rates.
